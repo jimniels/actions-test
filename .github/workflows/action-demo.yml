@@ -18,7 +18,7 @@ jobs:
         run: npm install
 
       - name: Update source code
-        run: ./action.js
+        run: node ./action.js
         shell: bash
 
       - name: Commit changes
