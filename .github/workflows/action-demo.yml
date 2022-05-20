@@ -18,12 +18,12 @@ jobs:
         run: npm install
 
       - name: Update source code
-        run: eslint "src/**" --fix
+        run: node ./actions.js
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: Your Name
-          author_email: mail@example.com
-          message: "Your commit message"
-          add: "*.js"
+          author_name: Jim Nielsen
+          author_email: jimniels@gmail.com
+          message: "Test commit message"
+          add: "*.json"
