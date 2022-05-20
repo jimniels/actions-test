@@ -18,7 +18,8 @@ jobs:
         run: npm install
 
       - name: Update source code
-        run: "node ${{ github.workspace }}action.js"
+        run: ./action.js
+        shell: bash
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
